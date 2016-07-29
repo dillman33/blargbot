@@ -1,0 +1,6 @@
+{
+  "name": "Blargbot",
+  "tagline": "Multipurpose Discord bot",
+  "body": "# blargbot\r\nblargbot is multipurpose discord bot. Coded in java using [Discord4J](https://github.com/austinv11/Discord4J), blargbot hopes to bring commands and services to your discord.\r\n\r\n### Commands\r\nblargbot is equipped with numerous commands, which are detailed [here](https://github.com/Ratismal/blargbot/wiki/Commands).\r\n\r\n### Open-Sourced\r\nblargbot is completely open-source under the [MIT license](https://github.com/Ratismal/blargbot/blob/master/LICENSE.md). If you use any of the source in your own project, credit would be nice but not required.\r\n\r\n### Open To Suggestions\r\nHave a suggestion for the bot? I would be glad to hear it! Found a bug? I'd like to hear that too! You can suggest anything to me using the `suggest` command, by [joining my discord](https://discord.gg/015GVxZxI8rtlJgXF), or by [submitting a ticket](https://github.com/Ratismal/blargbot/issues).",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}

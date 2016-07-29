@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="author" content="blargbot">
+    <meta content="a multipurpose discord bot" property="og:description">
+    <meta content="ratismal (stupid cat)" property="og:site_name">
+    <meta content='https://raw.githubusercontent.com/Ratismal/blargbot/gh-pages/blargbot.png' property='og:image'>
+    <meta content='image/png' property='og:image:type'>
+    <meta content='688' property='og:image:width'>
+    <meta content='688' property='og:image:height'>
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <link rel="stylesheet" type="text/css" href="stylesheets/commands.css" media="screen">
+
+    <title>Blargbot by Ratismal</title>
+</head>
+
+<body>
+
+<header>
+
+    <div class="container">
+        <div id="icondiv"><img src="images/blargbot-circle.png" alt="blargbot" height="128" width="128"></div>
+        <h1>blargbot</h1>
+        <h2 class="dontmove">Multipurpose Discord Bot</h2>
+
+
+        <section id="downloads">
+            <a href="https://github.com/Ratismal/blargbot" class="btn btn-github"><span class="icon"></span>View on
+                GitHub</a>
+        </section>
+    </div>
+</header>
+
+<div class="container">
+    <h1>Command List</h1>
+
+    <p>blargbot is equipped with a number of miscellaneous commands.
+        By default, blargbot uses the command prefix '!'. This can be changed with the setprefix command. It will also
+        respond to it's name, 'blargbot'.</p>
+
+    <p>Some commands have permission requirements. In order to satisfy them, you need to have a role with the name
+        detailed in the Permissions section.</p>
+
+    <p>Usage legend:</p>
+
+    <p>&lt;&gt; - denotes a required parameter</p>
+
+    <p>() - denotes an optional parameter</p>
+
+    <p>Index:
+        <a href="#general-commands">General Commands</a></p>
+
+    <ul>
+        <li><a href="#cat">cat</a></li>
+        <li><a href="#danbooru">danbooru</a></li>
+        <li><a href="#e621">e621</a></li>
+        <li><a href="#econ">econ</a></li>
+        <li><a href="#help">help</a></li>
+        <li><a href="#info">info</a></li>
+        <li><a href="#insult">insult</a></li>
+        <li><a href="#invite">invite</a></li>
+        <li><a href="#join">join</a></li>
+        <li><a href="#nsfw">nsfw</a></li>
+        <li><a href="#ping">ping</a></li>
+        <li><a href="#roll">roll</a></li>
+        <li><a href="#suggest">suggest</a></li>
+        <li><a href="#xkcd">xkcd</a></li>
+    </ul>
+
+    <p><a href="#simple-commands">Simple Commands</a></p>
+
+    <p><a href="#admin-commands">Admin Commands</a></p>
+
+    <ul>
+        <li><a href="#ccommand">ccommand</a></li>
+        <li><a href="#greet">greet</a></li>
+        <li><a href="#setprefix">setprefix</a></li>
+        <li><a href="#tidy">tidy</a></li>
+    </ul>
+
+    <h2>
+        <a name="general-commands"></a>
+
+        General commands
+    </h2>
+
+    <h3>
+        <a name="cat"></a>
+        cat
+    </h3>
+
+    <h5>
+        Usage: cat
+    </h5>
+
+    <h5>
+        Permissions: none
+    </h5>
+
+    <p>Displays a picture of a cat, taken from <a href="http://random.cat/">random.cat</a></p>
+
+    <h3>
+        <a name="danbooru"></a>
+
+        danbooru
+    </h3>
+
+    <h5>
+        Usage: danbooru &lt;tags&gt;</h5>
+
+    <h5>
+        Permissions: 'Porn Summoner' (if not safe)
+    </h5>
+
+    <p>Displays three images obtained from <a href="https://danbooru.donmai.us/">danbooru.donmai.us</a> using the
+        provided tags. You can use up to 2 tags at a time. Result have to possibility of being NSFW. If the current
+        channel is not designated as NSFW, a user needs the role by the name of "Porn Summoner" in order to use this
+        command without including the 'rating:safe' tag.</p>
+
+    <h3>
+        <a name="e621"></a>
+
+        e621
+    </h3>
+
+    <h5>
+        Usage: e621 &lt;tags&gt;</h5>
+
+    <h5>
+        Permissions: 'Porn Summoner' (if not safe)
+    </h5>
+
+    <p>Displays three images obtained from <a href="http://e621.net/">e621.net</a> using the provided tags. You can use
+        up to 6 tags at a time. Result have to possibility of being NSFW. If the current channel is not designated as
+        NSFW, a user needs the role by the name of "Porn Summoner" in order to use this command without including the
+        'rating:safe' tag.</p>
+
+    <h3>
+        <a name="econ"></a>
+
+        econ
+    </h3>
+
+    <h5>
+        Usage: econ &lt;from&gt; &lt;to&gt; &lt;amount&gt;</h5>
+
+    <h5>
+        Permissions: none
+    </h5>
+
+    <p>Converts currency using recent rates.
+        Example:</p>
+
+<pre><code>User&gt; blargbot econ USD CAD 1
+blargbot&gt; @User, 1.0 USD is equivalent to X.X CAD
+</code></pre>
+
+    <p>Currency codes are not case sensitive.</p>
+
+    <h3>
+        <a name="help"></a>
+        help
+    </h3>
+
+    <h5>
+        Usage: help (command)
+    </h5>
+
+    <h5>
+        Permissions: none
+    </h5>
+
+    <p>Returns a list of built-in commands and custom commands. If a command is specified, it will return a description
+        of that command instead.</p>
+
+    <h3>
+        <a name="info"></a>
+
+        info
+    </h3>
+
+    <h5>
+        Usage: info
+    </h5>
+
+    <h5>
+        Permissions: none
+    </h5>
+
+    <p>Returns information about the bot.</p>
+
+    <h3>
+        <a name="insult"></a>
+
+        insult
+    </h3>
+
+    <h5>
+        Usage: insult (name)
+    </h5>
+
+    <h5>
+        Permissions: none
+    </h5>
+
+    <p>Generates an insult, direct at whatever name is supplied. If a name isn't supplied, defaults to 'Your'</p>
+
+    <h3>
+        <a name="invite"></a>
+
+        invite
+    </h3>
+
+    <h5>
+        Usage: invite
+    </h5>
+
+    <h5>
+        Permissions: none
+    </h5>
+
+    <p>Gives a link to invite me to your discord, and gives another link to invite you to my discord!</p>
+
+    <h3>
+        <a name="join"></a>
+
+        join
+    </h3>
+
+    <h5>
+        Usage: join
+    </h5>
+
+    <h5>
+        Permissions: none
+    </h5>
+
+    <p>Does the same thing as <code>invite</code>.</p>
+
+    <h3>
+        <a name="ping"></a>
+
+        ping
+    </h3>
+
+    <h5>
+        Usage: ping
+    </h5>
+
+    <h5>
+        Permissions: none
+    </h5>
+
+    <p>Finds the command latency.</p>
+
+    <h3>
+        <a name="roll"></a>
+
+        roll
+    </h3>
+
+    <h5>
+        Usage: roll (dice) (modifiers)
+    </h5>
+
+    <h5>
+        Permissions: none
+    </h5>
+
+    <p>Rolls dice and adds a modifier. You can specify the number of dice and how many sides they have with the notation
+        <code>XdY</code>, where X is number of dice and Y is number of sides. If no dice are specified, it defaults to
+        <code>1d20</code>.</p>
+
+    <h3>
+        <a name="suggest"></a>
+
+        suggest
+    </h3>
+
+    <h5>
+        Usage: suggest &lt;suggestion&gt;</h5>
+
+    <h5>
+        Permissions: none
+    </h5>
+
+    <p>Sends a suggestion to my discord. Thank you for the feedback! It's very important to me.</p>
+
+    <h3>
+        <a name="xkcd"></a>
+
+        xkcd
+    </h3>
+
+    <h5>
+        Usage: xkcd (number)
+    </h5>
+
+    <h5>
+        Permissions: none
+    </h5>
+
+    <p>Gives you an xkcd comic. If a number isn't specified, it gives you a random one.</p>
+
+    <h2>
+        <a name="simple-commands"></a>
+
+        Simple Commands
+    </h2>
+
+    <p>These commands have no functionality, and only return a block of text (similar to custom commands).</p>
+
+    <ul>
+        <li>butts</li>
+        <li>dance</li>
+        <li>gaze</li>
+        <li>mrmime</li>
+        <li>nyanpasu</li>
+        <li>salt</li>
+        <li>sofresh</li>
+    </ul>
+
+    <p>This list may be out of date!</p>
+
+    <h2>
+        <a name="admin-commands"></a>
+
+        Admin Commands
+    </h2>
+
+    <h3>
+        <a name="ccommand"></a>
+
+        ccommand
+    </h3>
+
+    <h5>
+        Usage: ccommand &lt;command name&gt; (command content)
+    </h5>
+
+    <h5>
+        Permissions: 'Bot Commander'
+    </h5>
+
+    <p>Creates a simple custom command. Once created, whenever you say the command name, blargbot will respond with the
+        command content. For example:</p>
+
+<pre><code>User&gt; blargbot ccommand test This is a test command.
+blargbot&gt; Created command test
+User&gt; blargbot test
+blargbot&gt; This is a test command.
+</code></pre>
+
+    <p>You can also use a %REPLY tag to make blargbot reply to the user.</p>
+
+<pre><code>input: Hello, %REPLY.
+output: Hello, @User
+</code></pre>
+
+    <p>To remove a custom command, simply do ccommand without command content. For example:</p>
+
+<pre><code>User&gt; blargbot ccommand test
+blargbot&gt; Removed command test
+User&gt; blargbot test
+*no response from blargbot*
+</code></pre>
+
+    <p>Finally, custom commands take precedent over all other commands. As such, you can use it to overwrite commands,
+        or disable them entirely. If the command content is "null" (without the quotations), blargbot will have no
+        output whatsoever, allowing you to disable any built-in command you wish. You cannot overwrite the 'ccommand'
+        command.</p>
+
+    <h3>
+        <a name="greet"></a>
+
+        greet
+    </h3>
+
+    <h5>
+        Usage: greet (greeting)
+    </h5>
+
+    <h5>
+        Permissions: 'Bot Commander'
+    </h5>
+
+    <p>Sets a greeting for any new user who joins your discord. You can use a %USER tag to get the user's name. For
+        example:</p>
+
+<pre><code>User&gt; blargbot greet Welcome, **%USER**. Please read #rules.
+blargbot&gt; Greeting set. Simulation: Welcome, **User**. Please read #rules.
+</code></pre>
+
+    <h3>
+        <a name="nsfw"></a>
+
+        nsfw
+    </h3>
+
+    <h5>
+        Usage: nsfw
+    </h5>
+
+    <h5>
+        Permissions: 'Bot Commander'
+    </h5>
+
+    <p>Designates the current channel as NSFW, allowing any user to do a NSFW command with the 'Porn Summoner' role.</p>
+
+    <h3>
+        <a name="setprefix"></a>
+
+        setprefix
+    </h3>
+
+    <h5>
+        Usage: setprefix &lt;prefix&gt;</h5>
+
+    <h5>
+        Permissions: 'Bot Commander'
+    </h5>
+
+    <p>Sets the command prefix for the guild. You can set it to anything that is one word long (no spaces). Set it to
+        'null' to disable it entirely and use only 'blargbot' as a prefix.</p>
+
+    <h3>
+        <a name="tidy"></a>
+
+        tidy
+    </h3>
+
+    <h5>
+        Usage: tidy (amount)
+    </h5>
+
+    <h5>
+        Permissions: 'Bot Commander'
+    </h5>
+
+    <p>Cleans a number of messages, defaulting to 25.</p>
+</div>
+
+
+</body>
+</html>
