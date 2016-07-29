@@ -43,7 +43,7 @@
 
     <p>blargbot uses a comprehensive system of tags. The syntax for them is simple: {tagname;arguments...}. Arguments
         are separated with semicolons (<code>;</code>) and there can be any number of arguments. Some tags require more
-        arguments than others.</p>
+        arguments than others. There are some examples <a href="#examples">here</a>.</p>
 
     <p>There are two types of tags:</p>
 
@@ -377,6 +377,64 @@
         </tr>
         </tbody>
     </table>
+
+    <h2>
+        <a name="examples"></a>
+        Examples</h2>
+    <p>Tags can be combined, nested, and used together to create powerful commands. For example:</p>
+    <code>
+        {set;waifuhash;{hash;{user;{args};k}}}{set;waifurating;{math;%;{if;<;{get;waifuhash};0;{math;*;{get;waifuhash};-1};{get;waifuhash}};100}}{set;waifumoji;{if;<=;{get;waifurating};60;💔;❤}}{get;waifumoji} I'd rate **{nick;{args};k}** as **{math;/;{get;waifurating};10}/10** {get;waifumoji}
+    </code>
+    <pre><code>
+        Input:
+            tag waifu stupid cat
+        Output:
+            ❤ I'd rate stupid cat as 8.1/10 ❤
+    </code></pre>
+    <code>
+        Here's your sleepy kitty, {username}!
+        {randchoose;http://i.imgur.com/zuhDRDT.gif;
+        http://i.imgur.com/0Jouxni.gif;
+        http://i.imgur.com/xP4Twvo.gif;
+        http://i.imgur.com/EDBtvW4.gif;
+        http://i.imgur.com/Pr0ovhy.gif;
+        http://i.imgur.com/CNh2Jen.gif;
+        http://i.imgur.com/lYTc1f3.gif;
+        http://i.imgur.com/9125v7e.gif;
+        http://i.imgur.com/d1cGI9H.gif;
+        http://i.imgur.com/Jdxjdgm.gif;
+        http://i.imgur.com/0ixS2gi.gif;
+        http://i.imgur.com/p8soxvZ.gif;
+        http://i.imgur.com/bssgLxK.gif;
+        http://i.imgur.com/tLVte5N.gif;
+        http://i.imgur.com/PyvrGTI.gif;
+        http://i.imgur.com/Hfh4LQH.gif;
+        http://i.imgur.com/mDTWNSY.gif;
+        http://i.imgur.com/fc3BsdW.gif;
+        http://i.imgur.com/vTXqGdS.gif;
+        http://i.imgur.com/DzMOiZx.gif;
+        http://i.imgur.com/IWa6N2B.gif;
+        http://i.imgur.com/YxYpOHc.gif;
+        http://i.imgur.com/YwLHV2L.gif}
+    </code>
+    <pre><code>
+        Input:
+            tag sleepykitty
+        Output:
+            Here's your sleepy kitty, stupid cat!
+
+            http://i.imgur.com/tLVte5N.gif
+    </code></pre>
+
+    <code>
+        {set;respects;{math;+;{get;respects};1}} **{usernick}** has paid their respects. Total respects given: **{get;respects}**
+    </code>
+    <pre><code>
+        Input:
+            tag f
+        Output:
+            stupid cat has paid their respects. Total respects given: 5
+    </code></pre>
 </div>
 
 
