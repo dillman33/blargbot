@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
     <link rel="stylesheet" type="text/css" href="stylesheets/commands.css" media="screen">
 
-    <title>Blargbot by Ratismal</title>
+    <title>blargbot by ratismal</title>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
 <header>
 
     <div class="container">
-        <div id="icondiv"><img src="images/blargbot-circle.png" alt="blargbot" height="128" width="128"></div>
+        <div id="icondiv"><img src="images/blargbot-circle.gif" alt="blargbot" height="128" width="128"></div>
         <h1>blargbot</h1>
         <h2 class="dontmove">Multipurpose Discord Bot</h2>
 
@@ -38,7 +38,7 @@
 
 <div class="container">
     <h1>
-       Tags
+        Tags
     </h1>
 
     <p>blargbot uses a comprehensive system of tags. The syntax for them is simple: {tagname;arguments...}. Arguments
@@ -70,48 +70,6 @@
         </thead>
         <tbody>
         <tr>
-            <td>username</td>
-            <td>Returns the user's name</td>
-            <td>Your username is {username}</td>
-            <td>Your username is stupid cat</td>
-        </tr>
-        <tr>
-            <td>userid</td>
-            <td>Returns the user's ID</td>
-            <td>Your id is {userid}</td>
-            <td>Your id is 123456789123456</td>
-        </tr>
-        <tr>
-            <td>userdiscrim</td>
-            <td>Returns the user's discriminator</td>
-            <td>Your discrim is {userdiscrim}</td>
-            <td>Your discrim is 1234</td>
-        </tr>
-        <tr>
-            <td>usernick</td>
-            <td>Returns the user's nickname. If it doesn't exist, returns their username instead</td>
-            <td>Your nick is {usernick}</td>
-            <td>Your nick is cat</td>
-        </tr>
-        <tr>
-            <td>useravatar</td>
-            <td>Returns the user's avatar</td>
-            <td>Your avatar is {useravatar}</td>
-            <td>Your avatar is (avatar url)</td>
-        </tr>
-        <tr>
-            <td>userreply</td>
-            <td>Mentions the user</td>
-            <td>Hello, {userreply}!</td>
-            <td>Hello, <strong>@stupid cat</strong>!</td>
-        </tr>
-        <tr>
-            <td>usergame</td>
-            <td>Returns the game the user is playing</td>
-            <td>You're playing {usergame} right now!</td>
-            <td>You're playing documentation right now!</td>
-        </tr>
-        <tr>
             <td>channelid</td>
             <td>Returns the ID of the current channel</td>
             <td>This channel's id is {channelid}</td>
@@ -140,12 +98,6 @@
             <td>Returns the name of the current guild</td>
             <td>This guild's name is {guildname}</td>
             <td>This guild's name is TestGuild</td>
-        </tr>
-        <tr>
-            <td>guildcreated</td>
-            <td>Returns the date the guild was created</td>
-            <td>This guild was created on {guildcreated}</td>
-            <td>This guild was created on 2016-01-01T00:00:00-00:00</td>
         </tr>
         <tr>
             <td>guildmembers</td>
@@ -191,13 +143,13 @@
         </tr>
         <tr>
             <td>randuser</td>
-            <td>Returns the name of a random user</td>
-            <td>{randuser} is a lovely person!</td>
-            <td>abalabahaha is a lovely person!</td>
+            <td>Returns the id of a random user on the current guild.</td>
+            <td>{username;{randuser}} is a lovely person! {username;{randuser}} isn't as good.</td>
+            <td>abalabahaha is a lovely person! stupid cat isn't as good.</td>
         </tr>
         <tr>
             <td>nsfw</td>
-            <td>Marks the message is being NSFW, and only to be outputted in NSFW channels</td>
+            <td>Marks the message is being NSFW, and only to be outputted in NSFW channels.</td>
             <td>This command is not safe! {nsfw}</td>
             <td>This command is not safe!</td>
         </tr>
@@ -228,6 +180,7 @@
 
     <table>
         <thead>
+
         <tr>
             <th>Tag Name</th>
             <th>Arguments</th>
@@ -237,6 +190,112 @@
         </tr>
         </thead>
         <tbody>
+        <tr>
+            <td>username</td>
+            <td>(name) (quiet)</td>
+            <td>Returns the user's name. If <code>name</code> is specified, gets that user instead. If
+                <code>quiet</code> is
+                specified, if a user can't be found it will simply return the <code>name</code></td>
+            <td>Your username is {username;stupid;this can be anything}</td>
+            <td>Your username is stupid cat</td>
+        </tr>
+        <tr>
+            <td>userid</td>
+            <td>(name) (quiet)</td>
+            <td>Returns the user's ID. If <code>name</code> is specified, gets that user instead. If <code>quiet</code>
+                is
+                specified, if a user can't be found it will simply return the <code>name</code></td>
+            <td>Your id is {userid}</td>
+            <td>Your id is 123456789123456</td>
+        </tr>
+        <tr>
+            <td>userdiscrim</td>
+            <td>(name) (quiet)</td>
+            <td>Returns the user's discriminator. If <code>name</code> is specified, gets that user instead. If <code>quiet</code>
+                is
+                specified, if a user can't be found it will simply return the <code>name</code></td>
+            <td>Your discrim is {userdiscrim}</td>
+            <td>Your discrim is 1234</td>
+        </tr>
+        <tr>
+            <td>usernick</td>
+            <td>(name) (quiet)</td>
+            <td>Returns the user's nickname. If it doesn't exist, returns their username instead. If <code>name</code>
+                is specified, gets that user instead. If <code>quiet</code> is
+                specified, if a user can't be found it will simply return the <code>name</code>
+            </td>
+            <td>Your nick is {usernick}</td>
+            <td>Your nick is cat</td>
+        </tr>
+        <tr>
+            <td>useravatar</td>
+            <td>(name) (quiet)</td>
+            <td>Returns the user's avatar. If <code>name</code> is specified, gets that user instead. If
+                <code>quiet</code> is
+                specified, if a user can't be found it will simply return the <code>name</code></td>
+            <td>Your avatar is {useravatar}</td>
+            <td>Your avatar is (avatar url)</td>
+        </tr>
+        <tr>
+            <td>userreply</td>
+            <td>(name) (quiet)</td>
+            <td>Mentions the user. If <code>name</code> is specified, gets that user instead. If <code>quiet</code> is
+                specified, if a user can't be found it will simply return the <code>name</code></td>
+            <td>Hello, {userreply}!</td>
+            <td>Hello, <strong>@stupid cat</strong>!</td>
+        </tr>
+        <tr>
+            <td>usergame</td>
+            <td>(name) (quiet)</td>
+            <td>Returns the game the user is playing. If <code>name</code> is specified, gets that user instead.</td>
+            <td>You're playing {usergame} right now! If <code>quiet</code> is
+                specified, if a user can't be found it will simply return the <code>name</code></td>
+            <td>You're playing documentation right now!</td>
+        </tr>
+        <tr>
+            <td>usergametype</td>
+            <td>(name) (quiet)</td>
+            <td>Returns how the user is playing the game (playing, streaming). If <code>name</code> is specified, gets
+                that user instead. If <code>quiet</code> is
+                specified, if a user can't be found it will simply return the <code>name</code>
+            </td>
+            <td>You're {usergametype} right now!</td>
+            <td>You're playing right now!</td>
+        </tr>
+        <tr>
+            <td>usercreatedat</td>
+            <td>(format) (name) (quiet)</td>
+            <td>Returns the date the user was created. If a <code>format</code> code is specified, the date is formatted
+                accordingly. Leave blank for default formatting. See the <a href="http://url.com">moment
+                    documentation</a> for more information. If <code>name</code> is specified, gets that user instead.
+                If <code>quiet</code> is
+                specified, if a user can't be found it will simply return the <code>name</code>
+            </td>
+            <td>Your account was created on {usercreatedat;YYYY/MM/DD HH:mm:ss}</td>
+            <td>Your account was created on 2016/01/01 01:00:00.</td>
+        </tr>
+        <tr>
+            <td>userjoinedat</td>
+            <td>(format) (name) (quiet)</td>
+            <td>Returns the date the user joined the current guild. If a <code>format</code> code is specified, the date
+                is formatted accordingly. Leave blank for default formatting. See the <a href="http://url.com">moment
+                    documentation</a> for more information. If <code>name</code> is specified, gets that user instead.
+                If <code>quiet</code> is
+                specified, if a user can't be found it will simply return the <code>name</code>
+            </td>
+            <td>Your account joined this guild on {userjoinedat;YYYY/MM/DD HH:mm:ss}</td>
+            <td>Your account joined this guild on 2016/01/01 01:00:00</td>
+        </tr>
+        <tr>
+            <td>guildcreatedat</td>
+            <td>(format)</td>
+            <td>Returns the guild joined the current guild. If a <code>format</code> code is specified, the date is
+                formatted accordingly. Leave blank for default formatting. See the <a href="http://url.com">moment
+                    documentation</a> for more information.
+            </td>
+            <td>This guild was created on {guildcreatedat;YYYY/MM/DD HH:mm:ss}</td>
+            <td>This guild was created on 2016/01/01 01:00:00</td>
+        </tr>
         <tr>
             <td>fallback</td>
             <td>&lt;message&gt;</td>
@@ -325,7 +384,7 @@
             <td>&lt;evaluator&gt; &lt;arg1&gt; &lt;arg2&gt; &lt;then&gt; &lt;else&gt;</td>
             <td>Evaluates <code>arg1</code> and <code>arg2</code> using the <code>evaluator</code>. If it returns true,
                 the tag returns <code>then</code>. Otherwise, it returns <code>else</code>. Valid evaluators are <code>==</code>
-                <code>!=</code> <code>\&lt;</code> <code>\&lt;=</code> <code>\&gt;</code> <code>\&gt;=</code>
+                <code>!=</code> <code>&lt;</code> <code>&lt;=</code> <code>&gt;</code> <code>&gt;=</code>
             </td>
             <td>{if;&lt;=;5;10;5 is less than or equal to 10;5 is greater than 10}</td>
             <td>5 is less than or equal to 10</td>
@@ -348,33 +407,13 @@
             <td>user</td>
             <td>&lt;query&gt; (quiet)</td>
             <td>Searches for a user with given <code>query</code>, and returns the user's name. If <code>quiet</code> is
-                specified, if a user can't be found it will simple return the <code>query</code>.
+                specified, if a user can't be found it will simply return the <code>query</code>.
             </td>
             <td>This user's name is {user;stupid;can be anything}</td>
             <td>On succeed: <code>This user's name is stupid cat</code> On fail: <code>This user's name is stupid</code>
             </td>
         </tr>
-        <tr>
-            <td>nick</td>
-            <td>&lt;query&gt; (quiet)</td>
-            <td>Does the same thing as <code>user</code>, but returns a username.</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>discrim</td>
-            <td>&lt;query&gt; (quiet)</td>
-            <td>Does the same thing as <code>user</code>, but returns a discriminator.</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>hash</td>
-            <td>&lt;string&gt;</td>
-            <td>Converts <code>string</code> into a numerical hash.</td>
-            <td>{hash;brown}</td>
-            <td>94011702</td>
-        </tr>
+
         </tbody>
     </table>
 
@@ -383,7 +422,8 @@
         Examples</h2>
     <p>Tags can be combined, nested, and used together to create powerful commands. For example:</p>
     <code>
-        {set;waifuhash;{hash;{user;{args};k}}}{set;waifurating;{math;%;{if;<;{get;waifuhash};0;{math;*;{get;waifuhash};-1};{get;waifuhash}};100}}{set;waifumoji;{if;<=;{get;waifurating};60;💔;❤}}{get;waifumoji} I'd rate **{nick;{args};k}** as **{math;/;{get;waifurating};10}/10** {get;waifumoji}
+        {set;waifuhash;{hash;{user;{args};k}}}{set;waifurating;{math;%;{if;<;{get;waifuhash};0;{math;*;{get;waifuhash};-1};{get;waifuhash}};100}}{set;waifumoji;{if;<=;{get;waifurating};60;💔;❤}}{get;waifumoji}
+        I'd rate **{nick;{args};k}** as **{math;/;{get;waifurating};10}/10** {get;waifumoji}
     </code>
     <pre><code>
         Input:
@@ -427,7 +467,8 @@
     </code></pre>
 
     <code>
-        {set;respects;{math;+;{get;respects};1}} **{usernick}** has paid their respects. Total respects given: **{get;respects}**
+        {set;respects;{math;+;{get;respects};1}} **{usernick}** has paid their respects. Total respects given:
+        **{get;respects}**
     </code>
     <pre><code>
         Input:
@@ -437,6 +478,13 @@
     </code></pre>
 </div>
 
+<footer>
+    <div class="container">
+        <h1>ratismal</h1>
+        <h2><a href="http://stupidfeline.tk">website</a> - <a href="http://ratismal.tumblr.com">tumblr</a> - <a
+                href="http://github.com/Ratismal/">github</a></h2>
+    </div>
+</footer>
 
 </body>
 </html>

@@ -22,6 +22,8 @@ body {
   margin: 0 auto;
 }
 
+
+
 section {
   display: block;
   margin: 0 0 20px 0;
@@ -52,7 +54,7 @@ header {
 header h1 {
   font-size: 30px;
   line-height: 1.5;
-  margin: 0 0 0 -40px;
+  margin: 0 0 0 -55px;
   font-weight: bold;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: #b5e853;
@@ -64,11 +66,55 @@ header h1 {
 }
 
 header h1:before {
-  content: "./ ";
-  font-size: 24px;
+  content: "$./";
+  font-size: 30px;
+}
+header h1:after {
+  content: ".js";
+  font-size: 30px;
 }
 
 header h2 {
+  font-size: 18px;
+  font-weight: 300;
+  color: #666;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border-top: 1px dashed #b5e853;
+  padding: 20px 0;
+
+  margin: 40px 0 0 0;
+}
+
+footer h1 {
+  font-size: 30px;
+  line-height: 1.5;
+  margin: 0 0 0 -38px;
+  font-weight: bold;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  color: #b5e853;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+  0 0 5px rgba(181, 232, 83, 0.1),
+  0 0 10px rgba(181, 232, 83, 0.1);
+  letter-spacing: -1px;
+  -webkit-font-smoothing: antialiased;
+}
+
+footer h1:before {
+  content: "> ";
+  font-size: 30px;
+}
+
+footer h1:after {
+  content: "_";
+  font-size: 30px;
+}
+
+
+footer h2 {
   font-size: 18px;
   font-weight: 300;
   color: #666;
@@ -78,6 +124,7 @@ header h2 {
   display: inline-block;
   text-align: center;
   margin: 0;
+  transition-duration: 0s;
 }
 
 /* Main Content
@@ -236,6 +283,14 @@ hr {
 a {
   color: #63c0f5;
   text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
+  transition-duration: 0.3s;
+
+}
+
+a:hover {
+  color: #b5e853;
+  text-shadow: 0 0 5px rgba(181, 232, 83, 0.5);
+  transition-duration: 0.1s;
 }
 
 /* Clearfix */

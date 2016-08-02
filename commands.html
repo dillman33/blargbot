@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
     <link rel="stylesheet" type="text/css" href="stylesheets/commands.css" media="screen">
 
-    <title>Blargbot by Ratismal</title>
+    <title>blargbot by ratismal</title>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
 <header>
 
     <div class="container">
-        <div id="icondiv"><img src="images/blargbot-circle.png" alt="blargbot" height="128" width="128"></div>
+        <div id="icondiv"><img src="images/blargbot-circle.gif" alt="blargbot" height="128" width="128"></div>
         <h1>blargbot</h1>
         <h2 class="dontmove">Multipurpose Discord Bot</h2>
 
@@ -69,6 +69,8 @@
         <li><a href="#ping">ping</a></li>
         <li><a href="#roll">roll</a></li>
         <li><a href="#suggest">suggest</a></li>
+        <li><a href="#tag">tag</a></li>
+        <li><a href="#user">user</a></li>
         <li><a href="#xkcd">xkcd</a></li>
     </ul>
 
@@ -79,6 +81,7 @@
     <ul>
         <li><a href="#ccommand">ccommand</a></li>
         <li><a href="#greet">greet</a></li>
+        <li><a href="#purge">purge</a></li>
         <li><a href="#setprefix">setprefix</a></li>
         <li><a href="#tidy">tidy</a></li>
     </ul>
@@ -118,13 +121,12 @@
     </h5>
 
     <p>Displays three images obtained from <a href="https://danbooru.donmai.us/">danbooru.donmai.us</a> using the
-        provided tags. You can use up to 2 tags at a time. Result have to possibility of being NSFW. If the current
+        provided tags. You can use up to 2 tags at a time. Results have the possibility of being NSFW. If the current
         channel is not designated as NSFW, a user needs the role by the name of "Porn Summoner" in order to use this
         command without including the 'rating:safe' tag.</p>
 
     <h3>
         <a name="e621"></a>
-
         e621
     </h3>
 
@@ -136,7 +138,7 @@
     </h5>
 
     <p>Displays three images obtained from <a href="http://e621.net/">e621.net</a> using the provided tags. You can use
-        up to 6 tags at a time. Result have to possibility of being NSFW. If the current channel is not designated as
+        up to 6 tags at a time. Results have the possibility of being NSFW. If the current channel is not designated as
         NSFW, a user needs the role by the name of "Porn Summoner" in order to use this command without including the
         'rating:safe' tag.</p>
 
@@ -208,7 +210,7 @@ blargbot&gt; @User, 1.0 USD is equivalent to X.X CAD
         Permissions: none
     </h5>
 
-    <p>Generates an insult, direct at whatever name is supplied. If a name isn't supplied, defaults to 'Your'</p>
+    <p>Generates an insult, directed at whatever name is supplied. If a name isn't supplied, defaults to 'Your'</p>
 
     <h3>
         <a name="invite"></a>
@@ -224,7 +226,7 @@ blargbot&gt; @User, 1.0 USD is equivalent to X.X CAD
         Permissions: none
     </h5>
 
-    <p>Gives a link to invite me to your discord, and gives another link to invite you to my discord!</p>
+    <p>Gives a link to invite me to your guild, and gives another link to invite you to my guild!</p>
 
     <h3>
         <a name="join"></a>
@@ -288,7 +290,7 @@ blargbot&gt; @User, 1.0 USD is equivalent to X.X CAD
     <h5>
         Permissions: none
     </h5>
-    <p>Sends a suggestion to my discord. Thank you for the feedback! It's very important to me.</p>
+    <p>Sends a suggestion to my guild. Thank you for the feedback! It's very important to me.</p>
 
     <h3>
         <a name="tag"></a>
@@ -325,14 +327,14 @@ blargbot&gt; @User, 1.0 USD is equivalent to X.X CAD
     <pre><code>tag list</code></pre>
     <p>Lists all tags</p>
     <pre><code>tag help</code></pre>
-    <p>Get's basic tag help.</p>
+    <p>Gets basic tag help.</p>
 
     <h3>
         <a name="user"></a>
         user
     </h3>
     <h5>
-        Usage: user (id)</h5>
+        Usage: user (id/name/mention)</h5>
     <h5>
         Permissions: none
     </h5>
@@ -360,7 +362,7 @@ blargbot&gt; @User, 1.0 USD is equivalent to X.X CAD
         Simple Commands
     </h2>
 
-    <p>These commands have no functionality, and only return a block of text (similar to custom commands).</p>
+    <p>These commands have no functionality, and only return a block of text.</p>
 
     <ul>
         <li>butts</li>
@@ -403,10 +405,10 @@ User&gt; blargbot test
 blargbot&gt; This is a test command.
 </code></pre>
 
-    <p>You can also use a %REPLY tag to make blargbot reply to the user.</p>
+    <p>You can also use the <a href="tags.html">tagging system</a> to make more powerful commands.</p>
 
-<pre><code>input: Hello, %REPLY.
-output: Hello, @User
+<pre><code>input: Hello, {username}.
+output: Hello, User
 </code></pre>
 
     <p>To remove a custom command, simply do ccommand without command content. For example:</p>
@@ -436,10 +438,11 @@ User&gt; blargbot test
         Permissions: 'Bot Commander'
     </h5>
 
-    <p>Sets a greeting for any new user who joins your discord. You can use a %USER tag to get the user's name. For
+    <p>Sets a greeting for any new user who joins your discord. You can use the <a href="tags.html">tagging system</a>
+        for more customization. For
         example:</p>
 
-<pre><code>User&gt; blargbot greet Welcome, **%USER**. Please read #rules.
+<pre><code>User&gt; blargbot greet Welcome, **{username}**. Please read #rules.
 blargbot&gt; Greeting set. Simulation: Welcome, **User**. Please read #rules.
 </code></pre>
 
@@ -469,7 +472,7 @@ blargbot&gt; Greeting set. Simulation: Welcome, **User**. Please read #rules.
     <h5>
         Permissions: 'Bot Commander'
     </h5>
-    <p>Deletes all the messages within 500 messages the bot has said in the current channel</p>
+    <p>Deletes all the messages in the current channel made by the bot, within 500 messages.</p>
 
     <h3>
         <a name="setprefix"></a>
@@ -480,7 +483,7 @@ blargbot&gt; Greeting set. Simulation: Welcome, **User**. Please read #rules.
     <h5>
         Permissions: 'Bot Commander'
     </h5>
-    <p>Sets the command prefix for the guild. You can set it to anything that is one word long (no spaces). Set it to
+    <p>Sets the command prefix for the guild. You can set it to anything, as long as it's not blank. Set it to
         'null' to disable it entirely and use only 'blargbot' as a prefix.</p>
 
     <h3>
@@ -500,6 +503,13 @@ blargbot&gt; Greeting set. Simulation: Welcome, **User**. Please read #rules.
     <p>Cleans a number of messages, defaulting to 25.</p>
 </div>
 
+<footer>
+    <div class="container">
+        <h1>ratismal</h1>
+        <h2><a href="http://stupidfeline.tk">website</a> - <a href="http://ratismal.tumblr.com">tumblr</a> - <a
+                href="http://github.com/Ratismal/">github</a></h2>
+    </div>
+</footer>
 
 </body>
 </html>
