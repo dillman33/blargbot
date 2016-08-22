@@ -422,8 +422,7 @@
         Examples</h2>
     <p>Tags can be combined, nested, and used together to create powerful commands. For example:</p>
     <code>
-        {set;waifuhash;{hash;{user;{args};k}}}{set;waifurating;{math;%;{if;<;{get;waifuhash};0;{math;*;{get;waifuhash};-1};{get;waifuhash}};100}}{set;waifumoji;{if;<=;{get;waifurating};60;💔;❤}}{get;waifumoji}
-        I'd rate **{nick;{args};k}** as **{math;/;{get;waifurating};10}/10** {get;waifumoji}
+        {set;waifuhash;{hash;{args}}}{set;waifurating;{math;%;{if;<;{get;waifuhash};0;{math;*;{get;waifuhash};-1};{get;waifuhash}};100}}{set;waifumoji;{if;<=;{get;waifurating};60;💔;❤}}{get;waifumoji} I'd rate **{args}** as **{math;/;{get;waifurating};10}/10** {get;waifumoji}
     </code>
     <pre><code>
         Input:
@@ -467,8 +466,7 @@
     </code></pre>
 
     <code>
-        {set;respects;{math;+;{get;respects};1}} **{usernick}** has paid their respects. Total respects given:
-        **{get;respects}**
+        {set;respects;{math;+;{get;respects};1}} **{usernick}** has paid their respects. Total respects given: **{get;respects}**
     </code>
     <pre><code>
         Input:
