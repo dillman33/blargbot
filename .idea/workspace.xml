@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9eb3b06-a918-4dc9-9ca3-f5b10758660c" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/commands.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+    </list>
+    <list id="eb191014-2cb2-4ce2-bc11-ff7e9be8ead3" name="afasfsafsaf" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commands.html" afterPath="$PROJECT_DIR$/commands.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags.html" afterPath="$PROJECT_DIR$/tags.html" />
     </list>
     <ignored path="blargbotsite.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+            <state relative-caret-position="289">
+              <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -59,16 +63,6 @@
         <entry file="file://$PROJECT_DIR$/images/bkg.png">
           <provider selected="true" editor-type-id="images">
             <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="commands.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/commands.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="498" column="0" selection-start-line="498" selection-start-column="0" selection-end-line="498" selection-end-column="0" />
-              <folding />
-            </state>
           </provider>
         </entry>
       </file>
@@ -103,16 +97,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tags.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tags.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="420" column="24" selection-start-line="420" selection-start-column="24" selection-end-line="420" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -131,10 +115,10 @@
         <option value="vm:177" />
         <option value="$PROJECT_DIR$/stylesheets/commands.css" />
         <option value="$PROJECT_DIR$/params.json" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/stylesheets/stylesheet.css" />
         <option value="$PROJECT_DIR$/tags.html" />
         <option value="$PROJECT_DIR$/commands.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -175,6 +159,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -238,7 +223,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -253,6 +237,7 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Kirkland\WebstormProjects\blargbotsite\images" />
+      <recent name="C:\Users\Kirkland\WebstormProjects\blargbotsite" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.tags.html">
@@ -345,6 +330,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c9eb3b06-a918-4dc9-9ca3-f5b10758660c" name="Default" comment="" />
+      <changelist id="eb191014-2cb2-4ce2-bc11-ff7e9be8ead3" name="afasfsafsaf" comment="" />
       <created>1467339156002</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -360,21 +346,63 @@
       <workItem from="1470937918654" duration="15000" />
       <workItem from="1471128596666" duration="18000" />
       <workItem from="1471534870255" duration="436000" />
-      <workItem from="1471840446123" duration="2957000" />
+      <workItem from="1471840446123" duration="3749000" />
+      <workItem from="1472169308882" duration="858000" />
+      <workItem from="1472171026863" duration="800000" />
+      <workItem from="1472260314187" duration="727000" />
+      <workItem from="1472859802823" duration="583000" />
+      <workItem from="1473437216807" duration="39000" />
+      <workItem from="1474699453593" duration="287000" />
     </task>
+    <task id="LOCAL-00001" summary="added commands">
+      <created>1471843419056</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1471843419056</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fixed ; in usage&#10;">
+      <created>1471843565974</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1471843565974</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fixed OG icon">
+      <created>1472171066605</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1472171066605</updated>
+    </task>
+    <task id="LOCAL-00004" summary="favicon">
+      <created>1472171222869</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1472171222869</updated>
+    </task>
+    <task id="LOCAL-00005" summary="new icon">
+      <created>1472262365174</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1472262365174</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30385000" />
+    <option name="totallyTimeSpent" value="34471000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25297618" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27306548" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36764705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -399,6 +427,15 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added commands" />
+    <MESSAGE value="Fixed ; in usage&#10;" />
+    <MESSAGE value="fixed OG icon" />
+    <MESSAGE value="favicon" />
+    <MESSAGE value="new icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="new icon" />
+    <option name="PRESELECT_EXISTING_CHANGELIST" value="false" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -687,6 +724,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/bkg.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/stylesheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/images/blacktocat.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -710,23 +760,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/bkg.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/stylesheet.css">
+    <entry file="file://$PROJECT_DIR$/tags.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        <state relative-caret-position="34">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="3" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -739,18 +776,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tags.html">
+    <entry file="file://$PROJECT_DIR$/commands.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="420" column="24" selection-start-line="420" selection-start-column="24" selection-end-line="420" selection-end-column="24" />
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="44" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commands.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="498" column="0" selection-start-line="498" selection-start-column="0" selection-end-line="498" selection-end-column="0" />
+          <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
           <folding />
         </state>
       </provider>
